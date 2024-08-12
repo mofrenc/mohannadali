@@ -1,0 +1,108 @@
+body {
+    width: 360px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    background-color: #E0F7F7; /* Very light turquoise */
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px 20px 20px; /* Add bottom padding to make space for footer */
+    box-sizing: border-box;
+    flex-grow: 1;
+    justify-content: space-between; /* Space out content evenly */
+}
+
+h1 {
+    font-size: 24px;
+    color: #00796B; /* Dark turquoise for title */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#searchContainer {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px; /* Full-rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px; /* Space between search bar and text */
+}
+
+#searchText {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+#searchButton {
+    background-color: #00796B; /* Dark turquoise */
+    border: none;
+    border-radius: 50%; /* Rounded button */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#searchButton img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Hover and Active Styles */
+#searchButton:hover {
+    background-color: #005a4e; /* Slightly darker turquoise */
+}
+
+#searchButton:active {
+    background-color: #00403b; /* Even darker turquoise */
+}
+
+p {
+    font-size: 14px;
+    color: #00796B;
+    text-align: center;
+    margin: 0;
+}
+
+#footer {
+    width: 100%;
+    background-color: #00796B; /* Dark turquoise */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    padding: 10px 0; /* Adjusted padding for better spacing */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Light shadow on top */
+    font-weight: 300; /* Lighter font weight */
+}
+
+#footer a {
+    color: #FFEB3B; /* Highlight color for the name */
+    text-decoration: none;
+    margin-left: 5px;
+    font-weight: 400; /* Slightly bolder for contrast */
+}
+
+#footer a:hover {
+    color: #FFD700; /* Darker shade of yellow for hover */
+}
